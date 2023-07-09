@@ -98,7 +98,8 @@ select {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  overflow: visible;
+  overflow: hidden;
+  margin-bottom: 1rem;
   /* border: 1px solid lightslategray; */
 }
 
@@ -120,3 +121,10 @@ select {
   background-color: hsl(179, 100%, 13%);
 }
 
+/* mobile width media query */
+@media screen and (max-width:450px) {
+  .card-main {
+    width: 73%;
+    border-radius: 8px;
+  }
+}
