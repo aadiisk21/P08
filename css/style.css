@@ -138,7 +138,8 @@ select {
 .card p {
   color: hsla(0, 0%, 100%, 0.75);
   font-family: "Lexend Deca", sans-serif;
-  font-size: .84rem;
+  /* font-size: .84rem; */
+  font-size: 0.82rem;
   word-spacing: 1px;
   line-height: 24px;
 }
@@ -154,16 +155,38 @@ select {
 }
 
 .card-1 button {
-  background-color: hsl(31, 77%, 52%);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(31, 77%, 52%);
 }
 
 .card-2 button {
-  background-color: hsl(184, 100%, 22%);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(184, 100%, 22%);
 }
 
 .card-3 button {
-  background-color: hsl(179, 100%, 13%);
+  background-color: hsl(0, 0%, 95%);
+  color: hsl(179, 100%, 13%);
 }
+
+.card-1 button:hover {
+  background-color: hsl(31, 77%, 52%);
+  color: hsl(0, 0%, 95%);
+  transition: all 0.2s;
+}
+
+.card-2 button:hover {
+  background-color: hsl(184, 100%, 22%);
+  color: hsl(0, 0%, 95%);
+  transition: all 0.2s;
+}
+
+.card-3 button:hover {
+  background-color: hsl(179, 100%, 13%);
+  color: hsl(0,0%,95%);
+  transition: all 0.2s;
+}
+
 /* mobile width media query */
 @media screen and (max-width: 450px) {
   body {
@@ -188,6 +211,10 @@ select {
   .card-1 {
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
+  }
+
+  .card-1 p {
+    font-size: 0.95rem;
   }
 
   .card-3 {
